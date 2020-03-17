@@ -14,14 +14,14 @@ ca sa il vada si altii :)
  6.iti faci treaba :)
  
 - Pentru a trimite modificarile tale facute catre altii trebuie sa publici ceea ce ai facut, cum?
- 1.dupa ce ti-ai facut ce ai dorit trebuie sa vezi daca fisierele tale modificate apar undeva cu rosu folosind comanda
+ 1. dupa ce ti-ai facut ce ai dorit trebuie sa vezi daca fisierele tale modificate apar undeva cu rosu folosind comanda
  `git status`
- 2.ca sa poata vedea si altii fisierele modificate trebuie sa scrii comanda
+ 2. ca sa poata vedea si altii fisierele modificate trebuie sa scrii comanda
  `git add .`
- 3.ca sa salvezi modificarile tale in versiunea ta de aplicatie scrii 
+ 3. ca sa salvezi modificarile tale in versiunea ta de aplicatie scrii 
  `git commit --all -m "unMesajOarecare"`
- 4.ca sa publici pe net modificarile scrii
+ 4. ca sa publici pe net modificarile scrii
  `git push`
  
  
- -asta e
+ - asta e
