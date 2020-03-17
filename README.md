@@ -23,5 +23,5 @@ ca sa il vada si altii :)
  4. ca sa publici pe net modificarile scrii
  `git push`
  
- 
+ - ca sa iei ce e pe net deja facut scrii in gitbash `git pull master` sau `git pull develop` , depinde de cum o sa ne organizam
  - asta e
