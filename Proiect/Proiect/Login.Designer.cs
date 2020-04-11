@@ -7,6 +7,8 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        string connetionString =  @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\ANU3\semestrul2\PAOO\TravelAgency\Proiect\Proiect\Database1.mdf;Integrated Security=True";
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -29,18 +31,16 @@
         private void InitializeComponent()
         {
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.Password = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.loginBtn = new System.Windows.Forms.Button();
-            this.Password = new System.Windows.Forms.Label();
-            this.registerBtn = new System.Windows.Forms.Button();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPanel
             // 
-            this.mainPanel.Controls.Add(this.registerBtn);
             this.mainPanel.Controls.Add(this.Password);
             this.mainPanel.Controls.Add(this.Username);
             this.mainPanel.Controls.Add(this.textBox2);
@@ -50,6 +50,15 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(949, 644);
             this.mainPanel.TabIndex = 0;
+            // 
+            // Password
+            // 
+            this.Password.AutoSize = true;
+            this.Password.Location = new System.Drawing.Point(274, 377);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(49, 17);
+            this.Password.TabIndex = 4;
+            this.Password.Text = "Parola";
             // 
             // Username
             // 
@@ -64,6 +73,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(405, 377);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(156, 22);
             this.textBox2.TabIndex = 2;
             // 
@@ -83,24 +93,6 @@
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
-            // 
-            // Password
-            // 
-            this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(274, 377);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(49, 17);
-            this.Password.TabIndex = 4;
-            this.Password.Text = "Parola";
-            // 
-            // registerBtn
-            // 
-            this.registerBtn.Location = new System.Drawing.Point(721, 505);
-            this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(124, 46);
-            this.registerBtn.TabIndex = 5;
-            this.registerBtn.Text = "Inregistreaza-te";
-            this.registerBtn.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
@@ -124,7 +116,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.Button registerBtn;
     }
 }
 

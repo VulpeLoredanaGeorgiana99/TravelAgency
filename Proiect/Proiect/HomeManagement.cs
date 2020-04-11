@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,19 @@ namespace Proiect
             addCazare.Dock = DockStyle.Fill;
             addCazare.Show();
 
+        }
+        
+
+        private void metroButton4_Click(object sender, EventArgs e)
+        {
+            panelCazare.Controls.Clear();
+
+            tabViewCazare tabViewCazare = new tabViewCazare();
+            tabViewCazare.TopLevel = false;
+            panelCazare.Controls.Add(tabViewCazare);
+            tabViewCazare.FormBorderStyle = FormBorderStyle.None;
+            tabViewCazare.Dock = DockStyle.Fill;
+            tabViewCazare.Show();
         }
     }
 }
