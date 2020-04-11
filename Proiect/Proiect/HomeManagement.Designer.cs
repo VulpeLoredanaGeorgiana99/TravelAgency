@@ -28,29 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Cazare = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.Transport = new MetroFramework.Controls.MetroTabPage();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.panelCazare = new System.Windows.Forms.Panel();
-            this.Cazare.SuspendLayout();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.Cazare = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1.SuspendLayout();
+            this.Cazare.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Cazare
+            // Transport
             // 
-            this.Cazare.Controls.Add(this.metroTabPage1);
-            this.Cazare.Controls.Add(this.Transport);
-            this.Cazare.Location = new System.Drawing.Point(-1, -1);
-            this.Cazare.Name = "Cazare";
-            this.Cazare.SelectedIndex = 0;
-            this.Cazare.Size = new System.Drawing.Size(951, 648);
-            this.Cazare.TabIndex = 0;
-            this.Cazare.UseSelectable = true;
+            this.Transport.HorizontalScrollbarBarColor = true;
+            this.Transport.HorizontalScrollbarHighlightOnWheel = false;
+            this.Transport.HorizontalScrollbarSize = 10;
+            this.Transport.Location = new System.Drawing.Point(4, 38);
+            this.Transport.Name = "Transport";
+            this.Transport.Size = new System.Drawing.Size(943, 606);
+            this.Transport.TabIndex = 1;
+            this.Transport.Text = "Transport";
+            this.Transport.VerticalScrollbarBarColor = true;
+            this.Transport.VerticalScrollbarHighlightOnWheel = false;
+            this.Transport.VerticalScrollbarSize = 10;
             // 
             // metroTabPage1
             // 
@@ -72,19 +75,51 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
-            // Transport
+            // panelCazare
             // 
-            this.Transport.HorizontalScrollbarBarColor = true;
-            this.Transport.HorizontalScrollbarHighlightOnWheel = false;
-            this.Transport.HorizontalScrollbarSize = 10;
-            this.Transport.Location = new System.Drawing.Point(4, 38);
-            this.Transport.Name = "Transport";
-            this.Transport.Size = new System.Drawing.Size(943, 606);
-            this.Transport.TabIndex = 1;
-            this.Transport.Text = "Transport";
-            this.Transport.VerticalScrollbarBarColor = true;
-            this.Transport.VerticalScrollbarHighlightOnWheel = false;
-            this.Transport.VerticalScrollbarSize = 10;
+            this.panelCazare.Location = new System.Drawing.Point(182, 0);
+            this.panelCazare.Name = "panelCazare";
+            this.panelCazare.Size = new System.Drawing.Size(758, 606);
+            this.panelCazare.TabIndex = 7;
+           
+            // 
+            // metroButton4
+            // 
+            this.metroButton4.Location = new System.Drawing.Point(3, 264);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(176, 29);
+            this.metroButton4.TabIndex = 6;
+            this.metroButton4.Text = " Vizualizare";
+            this.metroButton4.UseSelectable = true;
+            this.metroButton4.Click += new System.EventHandler(this.metroButton4_Click);
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.Location = new System.Drawing.Point(3, 192);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(176, 29);
+            this.metroButton3.TabIndex = 5;
+            this.metroButton3.Text = " Stergere";
+            this.metroButton3.UseSelectable = true;
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.Location = new System.Drawing.Point(3, 117);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(176, 29);
+            this.metroButton2.TabIndex = 4;
+            this.metroButton2.Text = "Modificare";
+            this.metroButton2.UseSelectable = true;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(3, 46);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(176, 29);
+            this.metroButton1.TabIndex = 3;
+            this.metroButton1.Text = " Adaugare";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // splitter1
             // 
@@ -95,49 +130,16 @@
             this.splitter1.TabIndex = 2;
             this.splitter1.TabStop = false;
             // 
-            // metroButton1
+            // Cazare
             // 
-            this.metroButton1.Location = new System.Drawing.Point(24, 46);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(114, 29);
-            this.metroButton1.TabIndex = 3;
-            this.metroButton1.Text = " Adaugare";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.Location = new System.Drawing.Point(24, 117);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(114, 29);
-            this.metroButton2.TabIndex = 4;
-            this.metroButton2.Text = "Modificare";
-            this.metroButton2.UseSelectable = true;
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.Location = new System.Drawing.Point(24, 192);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(114, 29);
-            this.metroButton3.TabIndex = 5;
-            this.metroButton3.Text = " Stergere";
-            this.metroButton3.UseSelectable = true;
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.Location = new System.Drawing.Point(24, 264);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(114, 29);
-            this.metroButton4.TabIndex = 6;
-            this.metroButton4.Text = " Vizualizare";
-            this.metroButton4.UseSelectable = true;
-            // 
-            // panelCazare
-            // 
-            this.panelCazare.Location = new System.Drawing.Point(185, 3);
-            this.panelCazare.Name = "panelCazare";
-            this.panelCazare.Size = new System.Drawing.Size(755, 603);
-            this.panelCazare.TabIndex = 7;
+            this.Cazare.Controls.Add(this.metroTabPage1);
+            this.Cazare.Controls.Add(this.Transport);
+            this.Cazare.Location = new System.Drawing.Point(-1, -1);
+            this.Cazare.Name = "Cazare";
+            this.Cazare.SelectedIndex = 0;
+            this.Cazare.Size = new System.Drawing.Size(951, 648);
+            this.Cazare.TabIndex = 0;
+            this.Cazare.UseSelectable = true;
             // 
             // HomeManagement
             // 
@@ -148,22 +150,22 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeManagement";
             this.Text = "Management";
-            this.Cazare.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
+            this.Cazare.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroTabControl Cazare;
-        private MetroFramework.Controls.MetroTabPage metroTabPage1;
         private MetroFramework.Controls.MetroTabPage Transport;
+        private MetroFramework.Controls.MetroTabPage metroTabPage1;
+        private System.Windows.Forms.Panel panelCazare;
         private MetroFramework.Controls.MetroButton metroButton4;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton1;
         private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.Panel panelCazare;
+        private MetroFramework.Controls.MetroTabControl Cazare;
     }
 }

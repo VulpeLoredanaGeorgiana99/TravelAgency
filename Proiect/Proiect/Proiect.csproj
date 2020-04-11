@@ -69,11 +69,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database1DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet11.xsd</DependentUpon>
+    </Compile>
     <Compile Include="HomeManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HomeManagement.Designer.cs">
       <DependentUpon>HomeManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeOperation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeOperation.Designer.cs">
+      <DependentUpon>HomeOperation.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -89,8 +105,17 @@
     <Compile Include="tabAddCazare.Designer.cs">
       <DependentUpon>tabAddCazare.cs</DependentUpon>
     </Compile>
+    <Compile Include="tabViewCazare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabViewCazare.Designer.cs">
+      <DependentUpon>tabViewCazare.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="HomeManagement.resx">
       <DependentUpon>HomeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeOperation.resx">
+      <DependentUpon>HomeOperation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -107,6 +132,31 @@
     <EmbeddedResource Include="tabAddCazare.resx">
       <DependentUpon>tabAddCazare.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="tabViewCazare.resx">
+      <DependentUpon>tabViewCazare.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Database1DataSet1.xsc">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet1.xss">
+      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet11.xsc">
+      <DependentUpon>Database1DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet11.xss">
+      <DependentUpon>Database1DataSet11.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
