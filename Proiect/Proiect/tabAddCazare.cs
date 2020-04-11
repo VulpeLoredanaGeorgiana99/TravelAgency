@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proiect
 {
-    public partial class Form1 : Form
+    public partial class tabAddCazare : Form
     {
-        public Form1()
+        public tabAddCazare()
         {
             InitializeComponent();
         }
