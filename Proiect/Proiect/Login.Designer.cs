@@ -7,7 +7,7 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        string connetionString =  @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\ANU3\semestrul2\PAOO\TravelAgency\Proiect\Proiect\Database1.mdf;Integrated Security=True";
+        string connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Cristina\CTI Anul III\Semestrul II\PAOO\PROIECT_Final\TravelAgency\Proiect\Proiect\Database1.mdf;Integrated Security=True";
 
         /// <summary>
         /// Clean up any resources being used.
@@ -41,6 +41,7 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.BackgroundImage = global::Proiect.Properties.Resources.descărcare;
             this.mainPanel.Controls.Add(this.Password);
             this.mainPanel.Controls.Add(this.Username);
             this.mainPanel.Controls.Add(this.textBox2);
