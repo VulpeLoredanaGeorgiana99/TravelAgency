@@ -81,11 +81,10 @@
             this.panelCazare.Name = "panelCazare";
             this.panelCazare.Size = new System.Drawing.Size(758, 606);
             this.panelCazare.TabIndex = 7;
-           
             // 
             // metroButton4
             // 
-            this.metroButton4.Location = new System.Drawing.Point(3, 264);
+            this.metroButton4.Location = new System.Drawing.Point(3, 432);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(176, 29);
             this.metroButton4.TabIndex = 6;
@@ -95,7 +94,7 @@
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(3, 192);
+            this.metroButton3.Location = new System.Drawing.Point(3, 322);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(176, 29);
             this.metroButton3.TabIndex = 5;
@@ -104,7 +103,7 @@
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(3, 117);
+            this.metroButton2.Location = new System.Drawing.Point(3, 197);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(176, 29);
             this.metroButton2.TabIndex = 4;
@@ -113,7 +112,7 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(3, 46);
+            this.metroButton1.Location = new System.Drawing.Point(3, 64);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(176, 29);
             this.metroButton1.TabIndex = 3;
