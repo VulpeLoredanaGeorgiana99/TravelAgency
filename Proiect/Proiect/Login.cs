@@ -25,7 +25,7 @@ namespace Proiect
             {
                 SqlConnection cnn;
                
-                cnn = new SqlConnection(connetionString);
+                cnn = new SqlConnection(Program.connetionString);
                 cnn.Open();
 
                 SqlCommand command = new SqlCommand("Select type_user from [USER_LOGIN] where user_name = @user and password_name= @pass", cnn);
@@ -57,6 +57,15 @@ namespace Proiect
                             management.FormBorderStyle = FormBorderStyle.None;
                             management.Dock = DockStyle.Fill;
                             management.Show();
+                        } else if(Convert.ToInt32(reader["type_user"]) == 1) //operator
+                        {
+                            mainPanel.Controls.Clear();
+                            HomeOperation homeOperation = new HomeOperation();
+                            homeOperation.TopLevel = false;
+                            mainPanel.Controls.Add(homeOperation);
+                            homeOperation.FormBorderStyle = FormBorderStyle.None;
+                            homeOperation.Dock = DockStyle.Fill;
+                            homeOperation.Show();
                         }
 
                     }
@@ -72,11 +81,11 @@ namespace Proiect
                 MessageBox.Show("Nu s-au introdus toate campurile");
             }
               
+        }
 
-         
-           
-
-
+        private void label1_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("SSS");
         }
     }
 }

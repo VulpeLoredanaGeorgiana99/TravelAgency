@@ -32,7 +32,7 @@ namespace Proiect
             if(textBox2.Text != "")
             {
                 
-                using (SqlConnection dataConnection = new SqlConnection(connetionString))
+                using (SqlConnection dataConnection = new SqlConnection(Program.connetionString))
                 {
                     
                     using (SqlCommand dataCommand = dataConnection.CreateCommand())
@@ -41,7 +41,7 @@ namespace Proiect
                         dataCommand.CommandText = "INSERT INTO cazare(nume,descr,adr_caz,tel,oras,pret__unitate) values(" +
                                                           "@nume,@descriere,@adresa,@tel,@oras,@pret)";
 
-                        dataCommand.Parameters.AddWithValue("@rank", rank);
+                        //dataCommand.Parameters.AddWithValue("@rank", rank);
                         dataCommand.Parameters.AddWithValue("@nume", textBox1.Text);
                         dataCommand.Parameters.AddWithValue("@descriere", textBox2.Text);
                         dataCommand.Parameters.AddWithValue("@adresa", textBox3.Text);
@@ -62,7 +62,7 @@ namespace Proiect
                   
             }else if(textBox2.Text == "")
             {
-                using (SqlConnection dataConnection = new SqlConnection(connetionString))
+                using (SqlConnection dataConnection = new SqlConnection(Program.connetionString))
                 {
 
                     using (SqlCommand dataCommand = dataConnection.CreateCommand())
