@@ -69,16 +69,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database1DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Database1DataSet11.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet11.xsd</DependentUpon>
-    </Compile>
+    <Compile Include="Activitate.cs" />
+    <Compile Include="Cazare.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="HomeManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +92,65 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tabAddActiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabAddActiv.Designer.cs">
+      <DependentUpon>tabAddActiv.cs</DependentUpon>
+    </Compile>
     <Compile Include="tabAddCazare.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="tabAddCazare.Designer.cs">
       <DependentUpon>tabAddCazare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabAddTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabAddTransport.Designer.cs">
+      <DependentUpon>tabAddTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabDelActiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabDelActiv.Designer.cs">
+      <DependentUpon>tabDelActiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabDeleteCazare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabDeleteCazare.Designer.cs">
+      <DependentUpon>tabDeleteCazare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabDeleteTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabDeleteTransport.Designer.cs">
+      <DependentUpon>tabDeleteTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabModifyActiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabModifyActiv.Designer.cs">
+      <DependentUpon>tabModifyActiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabModifyCazare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabModifyCazare.Designer.cs">
+      <DependentUpon>tabModifyCazare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabModifyTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabModifyTransport.Designer.cs">
+      <DependentUpon>tabModifyTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabViewActiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabViewActiv.Designer.cs">
+      <DependentUpon>tabViewActiv.cs</DependentUpon>
     </Compile>
     <Compile Include="tabViewCazare.cs">
       <SubType>Form</SubType>
@@ -111,6 +158,13 @@
     <Compile Include="tabViewCazare.Designer.cs">
       <DependentUpon>tabViewCazare.cs</DependentUpon>
     </Compile>
+    <Compile Include="tabViewTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabViewTransport.Designer.cs">
+      <DependentUpon>tabViewTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport.cs" />
     <EmbeddedResource Include="HomeManagement.resx">
       <DependentUpon>HomeManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,34 +183,42 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="tabAddActiv.resx">
+      <DependentUpon>tabAddActiv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="tabAddCazare.resx">
       <DependentUpon>tabAddCazare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabAddTransport.resx">
+      <DependentUpon>tabAddTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabDelActiv.resx">
+      <DependentUpon>tabDelActiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabDeleteCazare.resx">
+      <DependentUpon>tabDeleteCazare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabDeleteTransport.resx">
+      <DependentUpon>tabDeleteTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabModifyActiv.resx">
+      <DependentUpon>tabModifyActiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabModifyCazare.resx">
+      <DependentUpon>tabModifyCazare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabModifyTransport.resx">
+      <DependentUpon>tabModifyTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabViewActiv.resx">
+      <DependentUpon>tabViewActiv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tabViewCazare.resx">
       <DependentUpon>tabViewCazare.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Database1DataSet1.xsc">
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet1.xss">
-      <DependentUpon>Database1DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet11.xsc">
-      <DependentUpon>Database1DataSet11.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet11.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet11.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet11.xss">
-      <DependentUpon>Database1DataSet11.xsd</DependentUpon>
-    </None>
+    <EmbeddedResource Include="tabViewTransport.resx">
+      <DependentUpon>tabViewTransport.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
