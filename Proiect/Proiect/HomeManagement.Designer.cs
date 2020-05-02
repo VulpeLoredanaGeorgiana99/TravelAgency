@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeManagement));
             this.Transport = new MetroFramework.Controls.MetroTabPage();
             this.panelTransport = new System.Windows.Forms.Panel();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
@@ -81,6 +82,7 @@
             // 
             // panelTransport
             // 
+            this.panelTransport.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTransport.BackgroundImage")));
             this.panelTransport.Location = new System.Drawing.Point(185, 0);
             this.panelTransport.Name = "panelTransport";
             this.panelTransport.Size = new System.Drawing.Size(758, 606);
@@ -129,6 +131,7 @@
             // 
             // splitter2
             // 
+            this.splitter2.BackColor = System.Drawing.Color.PeachPuff;
             this.splitter2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitter2.Location = new System.Drawing.Point(0, 0);
             this.splitter2.Name = "splitter2";
@@ -158,6 +161,7 @@
             // 
             // panelCazare
             // 
+            this.panelCazare.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelCazare.BackgroundImage")));
             this.panelCazare.Location = new System.Drawing.Point(182, 0);
             this.panelCazare.Name = "panelCazare";
             this.panelCazare.Size = new System.Drawing.Size(758, 606);
@@ -196,6 +200,7 @@
             // 
             // metroButton1
             // 
+            this.metroButton1.BackColor = System.Drawing.SystemColors.Highlight;
             this.metroButton1.Location = new System.Drawing.Point(3, 46);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(176, 29);
@@ -206,6 +211,7 @@
             // 
             // splitter1
             // 
+            this.splitter1.BackColor = System.Drawing.Color.PeachPuff;
             this.splitter1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
@@ -222,7 +228,7 @@
             this.Cazare.Controls.Add(this.metroTabPage2);
             this.Cazare.Location = new System.Drawing.Point(-1, -1);
             this.Cazare.Name = "Cazare";
-            this.Cazare.SelectedIndex = 3;
+            this.Cazare.SelectedIndex = 0;
             this.Cazare.Size = new System.Drawing.Size(951, 648);
             this.Cazare.TabIndex = 0;
             this.Cazare.UseSelectable = true;
@@ -249,6 +255,7 @@
             // 
             // panelActivitati
             // 
+            this.panelActivitati.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelActivitati.BackgroundImage")));
             this.panelActivitati.Location = new System.Drawing.Point(183, 0);
             this.panelActivitati.Name = "panelActivitati";
             this.panelActivitati.Size = new System.Drawing.Size(758, 606);
@@ -297,6 +304,7 @@
             // 
             // splitter3
             // 
+            this.splitter3.BackColor = System.Drawing.Color.PeachPuff;
             this.splitter3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.splitter3.Location = new System.Drawing.Point(0, 0);
             this.splitter3.Name = "splitter3";
@@ -306,6 +314,7 @@
             // 
             // metroTabPage2
             // 
+            this.metroTabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("metroTabPage2.BackgroundImage")));
             this.metroTabPage2.Controls.Add(this.button1);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
@@ -321,12 +330,15 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(389, 276);
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(325, 274);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 53);
             this.button1.TabIndex = 2;
             this.button1.Text = " LOG OUT";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // HomeManagement

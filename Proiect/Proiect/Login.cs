@@ -85,7 +85,13 @@ namespace Proiect
 
         private void label1_MouseClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("SSS");
+            MessageBox.Show("   Societatea comercială TRAVEL AGENCY LCMG S.R.L  a fost înfiinţată în anul 2006 şi are ca obiect de activitate, prestarea de servicii turistice." +
+                " În completarea ofertelor noastre, colaborăm cu tour-operatori cu experienţă în domeniu, astfel încât să putem oferi clienţilor noştri orice pachet de servicii turistice şi bilete de avion pentru orice destinaţie. În acest sens menţionăm următorii tour-operatori şi companii aeriene cu care lucrăm prin comenzi on-line: Christian Tour, Interra, Paralela 45, Cocktail Holidays, Fibula, Omnia Turism, Europa Travel, Nova Travel, TUI, Blue Air, Wizz Air, Ryan Air, Hotelcon, Mondial Assistance etc");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

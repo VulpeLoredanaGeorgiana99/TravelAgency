@@ -11,7 +11,9 @@ namespace Proiect
         public static Transport transport = new Transport();
         public static Activitate activitate = new Activitate();
         public static Client myObj = new Client();
-        public static string connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\ANU3\semestrul2\PAOO\TravelAgency\Proiect\Proiect\Database1.mdf;Integrated Security=True";
+        public static string connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Cristina\CTI Anul III\Semestrul II\PAOO\PROIECT_Final\TravelAgency\Proiect\Proiect\Database1.mdf;Integrated Security=True";
+
+        //public static string connetionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\ANU3\semestrul2\PAOO\TravelAgency\Proiect\Proiect\Database1.mdf;Integrated Security=True";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
