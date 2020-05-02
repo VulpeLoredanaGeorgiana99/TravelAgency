@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeOperation));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.label3 = new System.Windows.Forms.Label();
@@ -213,6 +214,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.LightYellow;
             this.panel1.Controls.Add(this.textBox7);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -254,6 +256,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.LightYellow;
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.monthCalendar1);
@@ -408,6 +411,7 @@
             // 
             // metroTabPage3
             // 
+            this.metroTabPage3.BackColor = System.Drawing.Color.OliveDrab;
             this.metroTabPage3.Controls.Add(this.rezerbaBtn);
             this.metroTabPage3.Controls.Add(this.monthCalendar2);
             this.metroTabPage3.Controls.Add(this.label13);
@@ -423,6 +427,7 @@
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage3.VerticalScrollbarSize = 10;
+            this.metroTabPage3.Click += new System.EventHandler(this.metroTabPage3_Click);
             // 
             // rezerbaBtn
             // 
@@ -443,6 +448,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Location = new System.Drawing.Point(48, 44);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(93, 17);
@@ -460,6 +466,7 @@
             // 
             // metroTabPage4
             // 
+            this.metroTabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("metroTabPage4.BackgroundImage")));
             this.metroTabPage4.Controls.Add(this.button2);
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
             this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
@@ -475,12 +482,15 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(402, 283);
+            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.Location = new System.Drawing.Point(320, 295);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 53);
             this.button2.TabIndex = 3;
             this.button2.Text = " LOG OUT";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // HomeOperation

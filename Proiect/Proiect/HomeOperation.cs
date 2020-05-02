@@ -324,6 +324,11 @@ namespace Proiect
             login.Dock = DockStyle.Fill;
             login.Show();
         }
+
+        private void metroTabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
